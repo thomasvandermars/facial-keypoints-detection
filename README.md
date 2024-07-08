@@ -28,4 +28,4 @@ Note that the data folder in this project currently contains only a small sample
 
 The full Facial Key Point Detection Dataset can be downloaded <a href="https://www.kaggle.com/datasets/prashantarorat/facial-key-point-data">here</a>. 
 
-The downloaded zip file contains an "images" folder and a "all_data.json" file with the annotations. Replace the "images" sub-folder in "data" folder of this project to gain access to the full dataset.
+The .../data/images/ sub-folder needs to be replaced with the images folder in the downloaded zip file in order to gain access to the full dataset. 
