@@ -10,8 +10,8 @@ This facial key points detection model (Tensorflow & Keras) takes images of face
 
 ### Videos
 
-<img src="https://github.com/thomasvandermars/facial-keypoints-detection/blob/main/test_1.gif" width="49.5%"/>
-<img src="https://github.com/thomasvandermars/facial-keypoints-detection/blob/main/test_2.gif" width="49.5%"/>
+<img src="https://github.com/thomasvandermars/facial-keypoints-detection/tree/main/lib/test_1.gif" width="49.5%"/>
+<img src="https://github.com/thomasvandermars/facial-keypoints-detection/tree/main/lib/test_2.gif" width="49.5%"/>
 
 ## Download Dataset
 
