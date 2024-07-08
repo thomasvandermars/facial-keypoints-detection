@@ -24,6 +24,8 @@ This facial key points detection model (Tensorflow & Keras) takes images of face
  -->
 ## Download Dataset
 
-The Facial Key Point Detection Dataset can be downloaded <a href="https://www.kaggle.com/datasets/prashantarorat/facial-key-point-data">here</a>. 
+Note that the data folder in this project currently contains only a small sample of the dataset images.
 
-The downloaded zip file contains an "images" folder and a "all_data.json" file with the annotations. Move these two to the data folder of this project (which is currently empty).
+The full Facial Key Point Detection Dataset can be downloaded <a href="https://www.kaggle.com/datasets/prashantarorat/facial-key-point-data">here</a>. 
+
+The downloaded zip file contains an "images" folder and a "all_data.json" file with the annotations. Replace the "images" sub-folder in "data" folder of this project to gain access to the full dataset.
