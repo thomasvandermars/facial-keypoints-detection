@@ -9,7 +9,7 @@ This facial key points detection model (Tensorflow & Keras) takes images of face
 ![Data Sample](lib/test_on_unseen_images.png)
 
 ### Videos
-<div style="text-align:center"><img src="lib/test_1.gif" width="45%"/> <img src="lib/test_2.gif" width="45%"/></div>
+<img src="lib/test_1.gif" width="45%"/> <img src="lib/test_2.gif" width="45%"/>
 <img src="lib/test_3.gif" width="45%"/> <img src="lib/test_4.gif" width="45%"/>
 <img src="lib/test_5.gif" width="45%"/> <img src="lib/test_6.gif" width="45%"/>
 <img src="lib/test_7.gif" width="45%"/> <img src="lib/test_8.gif" width="45%"/>
