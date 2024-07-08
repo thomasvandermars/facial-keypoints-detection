@@ -325,17 +325,21 @@ def predict_video(filename,
                   color = (255,0,0), 
                   thickness = 2):
     """
-    Function to use the provided model to do object detection on the frames of a video.
-    And then return a reconstructed video with the bounding boxes.
+    Function to use the provided model on video (.mp4) files.
     
     :param str filename: image filename in test/image/ folder.
     :param tf.keras.model model: model.
     :param dict params: Hyperparameters.
-    :param int fps: frames per second for the reconstructed video
-    :param tuple color: Tuple with BGR color channel values [0-255].
-    :param float thickness: Bounding box linewidth. Default value is 2.
+    :param tuple mp4_output_dims: mp4 output dimensions (height, width).
+    :param boolean generate_gif: True if we want to generate corresponding GIF.
+    :param tuple gif_output_dims: GIF output dimensions (height, width).
+    :param int gif_quality: GIF frame quality (0 - 100).
+    :param string test_folder: relative path to folder containing the video with the filename specified above.
+    :param int fps: frames per second.
+    :param tuple color: tuple with BGR color channel values [0-255].
+    :param float thickness: bounding box linewidth. Default value is 2.
     
-    :return numpy.array frame_prediction_times: Numpy array with the model's prediction times for each frame.
+    :return list frame_inference_times: list with model frame inference times.
     """
     
     # make the directory for the results if it does not exist already
