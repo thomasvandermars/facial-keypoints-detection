@@ -4,15 +4,16 @@ This facial key points detection model (Tensorflow & Keras) takes images of face
 
 ## Model Performance
 
-#### Images
+### Images
 
 ![Data Sample](lib/test_on_unseen_images.png)
 
-#### Videos
+### Videos
 
-<!-- <img src="https://github.com/thomasvandermars/facial-keypoints-detection/blob/main/test_1.gif" width="49.5%"/> -->
+<img src="https://github.com/thomasvandermars/facial-keypoints-detection/blob/main/test_1.gif" width="49.5%"/>
+<img src="https://github.com/thomasvandermars/facial-keypoints-detection/blob/main/test_2.gif" width="49.5%"/>
 
-#### Download Dataset
+## Download Dataset
 
 The Facial Key Point Detection Dataset can be downloaded <a href="https://www.kaggle.com/datasets/prashantarorat/facial-key-point-data">here</a>. 
 
