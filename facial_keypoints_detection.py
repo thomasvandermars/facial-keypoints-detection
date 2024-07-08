@@ -70,9 +70,9 @@ def show(img, keypoints, params, color = 'red', point_size = 2, linewidth = 0.5)
     """
     Function to show sample from preprocessed image and keypoint data.
     
-    :param numpy.array img: image.
-    :param numpy.array: keypoints.
-    :param dict params: Hyperparameters.
+    :param numpy.array img: preprocessed image.
+    :param numpy.array: preprocessed keypoints.
+    :param dict params: hyperparameters.
     :param str color: color.
     :param float point_size: keypoint size. Default value is 2.
     :param float linewidth: connecting line width. Default value is 1.
@@ -122,6 +122,16 @@ def show(img, keypoints, params, color = 'red', point_size = 2, linewidth = 0.5)
     return keypoints
 
 def preprocess(index, anns, params):
+    """
+    Function to read-in and preprocess image/label pairings.
+    
+    :param int index: index.
+    :param dict anns: annotations directory.
+    :param dict params: hyperparameters.
+    
+    :return numpy.array img_array: preprocessed image array.
+    :return numpy.array targets: offset variables.
+    """
     
     # read in & resize image
     filename = anns[str(index)]['file_name']
@@ -138,6 +148,17 @@ def preprocess(index, anns, params):
     return img_array, targets
 
 def preprocess_with_augmentation(index, anns, augment_params, params):
+    """
+    Function to read-in and preprocess image/label pairings (with augmentation).
+    
+    :param int index: index.
+    :param dict anns: annotations directory.
+    :param dict augment_params: augmentation hyperparameters.
+    :param dict params: hyperparameters.
+    
+    :return numpy.array img_array: preprocessed image array.
+    :return numpy.array targets: offset variables.
+    """
     
     # read in & resize image
     keypoints = np.array(anns[str(index)]['face_landmarks'])
@@ -253,6 +274,19 @@ class test_data_generator(Sequence):
 
 # function to display model predictions on "unseen" test data
 def show_prediction(img, model, params, color = 'white', point_size = 2, linewidth = 0.5, linestyle = '--'):
+    """
+    Function to run model on a image.
+    
+    :param numpy.array img: preprocessed image.
+    :param tf.keras.model model: model.
+    :param dict params: hyperparameters.
+    :param str color: color.
+    :param float point_size: keypoint size. Default value is 2.
+    :param float linewidth: connecting line width. Default value is 1.
+    :param float linestyle: connecting line style. Default value is '--'.
+    
+    :return None.
+    """
     
     # run image through the model to get keypoint predictions
     pred = model(np.expand_dims(img, axis = 0))
